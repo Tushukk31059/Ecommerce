@@ -35,7 +35,7 @@ const Products = () => {
     const getAllProducts = async() => {
         try{
           setLoading(true)
-            const res = await axios.get(`http://localhost:8000/api/v1/products/getallproducts`);
+            const res = await axios.get(`https://ecommerce-backend-six-coral.vercel.app/api/v1/products/getallproducts`);
             if(res.data.success){
                 setAllProducts(res.data.products)
                 //  dispatch(setProducts(res.data.products)) 
@@ -167,7 +167,7 @@ export default Products
 //     try {
 //       setLoading(true);
 //       const res = await axios.get(
-//         "http://localhost:8000/api/v1/products/getallproducts"
+//         "https://ecommerce-backend-six-coral.vercel.app/api/v1/products/getallproducts"
 //       );
 //       if (res.data.success) {
 //         setAllProducts(res.data.products);

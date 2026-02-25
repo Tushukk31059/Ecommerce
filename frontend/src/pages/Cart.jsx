@@ -20,7 +20,7 @@ const Cart = () => {
  const total = subtotal + shipping + tax
  const navigate = useNavigate()
  const dispatch = useDispatch();
- const API = "http://localhost:8000/api/v1/cart"
+ const API = "https://ecommerce-backend-six-coral.vercel.app/api/v1/cart"
  const accessToken = localStorage.getItem("accessToken")
  const loadCart = async() =>{
   try{

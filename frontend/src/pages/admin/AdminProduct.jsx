@@ -82,7 +82,7 @@ if(sortOrder === 'highToLow'){
         }
 
         try {
-            const res = await axios.put(`http://localhost:8000/api/v1/products/update/${editProduct._id}`, formData, {
+            const res = await axios.put(`https://ecommerce-backend-six-coral.vercel.app/api/v1/products/update/${editProduct._id}`, formData, {
                 headers: {
                     Authorization: `Bearer ${accessToken}`,
                     "Content-Type": "multipart/form-data"
@@ -105,7 +105,7 @@ if(sortOrder === 'highToLow'){
     const deleteProductHandler = async (productId) => {
         try {
             const remainingProducts = products.filter((product) => product._id !== productId)
-            const res = await axios.delete(`http://localhost:8000/api/v1/products/delete/${productId}`, {
+            const res = await axios.delete(`https://ecommerce-backend-six-coral.vercel.app/api/v1/products/delete/${productId}`, {
                 headers: { Authorization: `Bearer ${accessToken}` }
             })
             if (res.data.success) {

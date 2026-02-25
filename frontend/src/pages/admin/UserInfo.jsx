@@ -45,7 +45,7 @@ try {
           formData.append("file",file)
          }
 
-const res = await axios.put(`http://localhost:8000/api/v1/users/update/${userId}`,formData,{
+const res = await axios.put(`https://ecommerce-backend-six-coral.vercel.app/api/v1/users/update/${userId}`,formData,{
   headers:{
     Authorization:`Bearer ${accessToken}`,
     "Content-Type":"multipart/form-data" 
@@ -63,7 +63,7 @@ if(res.data.success){
 
 const getUserDetails =  async() => {
   try {
-    const res = await axios.get(`http://localhost:8000/api/v1/users/get-user/${userId}`)
+    const res = await axios.get(`https://ecommerce-backend-six-coral.vercel.app/api/v1/users/get-user/${userId}`)
     if(res.data.success){
       setUpdateUser(res.data.user)
     }

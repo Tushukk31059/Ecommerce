@@ -14,7 +14,7 @@ const mailConfigurations = {
     subject:'Email Verification',
     text: `Hi! There , You have recently visited
     our website and entered your email .Please follow the given link to verify your email
-    http://localhost:5173/verify/${token}
+    https://ecommerce-chi-topaz-17.vercel.app/verify/${token}
     Thanks`
 };
 transporter.sendMail(mailConfigurations,function(error,info){

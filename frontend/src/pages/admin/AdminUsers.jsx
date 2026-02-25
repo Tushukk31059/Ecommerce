@@ -14,7 +14,7 @@ const AdminUsers = () => {
   const getAllUsers = async()=>{
     const accessToken = localStorage.getItem("accessToken")
     try{
-      const res = await axios.get(`http://localhost:8000/api/v1/users/all-user`,{
+      const res = await axios.get(`https://ecommerce-backend-six-coral.vercel.app/api/v1/users/all-user`,{
         headers:{
           Authorization: `Bearer ${accessToken}`
         }

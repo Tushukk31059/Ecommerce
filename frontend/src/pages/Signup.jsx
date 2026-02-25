@@ -42,7 +42,7 @@ const Signup = () => {
     console.log(formData);
     try {
       setLoading(true)
-      const res = await axios.post(`http://localhost:8000/api/v1/users/register`,formData,{
+      const res = await axios.post(`https://ecommerce-backend-six-coral.vercel.app/api/v1/users/register`,formData,{
         headers:{
           "Content-Type" :"application/json"
         }

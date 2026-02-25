@@ -50,7 +50,7 @@ const AddProduct = () => {
       })
       try {
         setLoading(true)
-        const res = await axios.post(`http://localhost:8000/api/v1/products/add`,formData,{
+        const res = await axios.post(`https://ecommerce-backend-six-coral.vercel.app/api/v1/products/add`,formData,{
            headers:{
         Authorization:`Bearer ${accessToken}`
 

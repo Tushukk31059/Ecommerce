@@ -18,7 +18,7 @@ const {cart} = useSelector(store=>store.product)
   const logoutHandler = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/users/logout`,
+        `https://ecommerce-backend-six-coral.vercel.app/api/v1/users/logout`,
         {},
         {
           headers: {

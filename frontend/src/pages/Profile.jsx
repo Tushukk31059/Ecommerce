@@ -97,7 +97,7 @@ try {
           formData.append("file",file)
          }
 
-const res = await axios.put(`http://localhost:8000/api/v1/users/update/${userId}`,formData,{
+const res = await axios.put(`https://ecommerce-backend-six-coral.vercel.app/api/v1/users/update/${userId}`,formData,{
   headers:{
     Authorization:`Bearer ${accessToken}`,
     "Content-Type":"multipart/form-data" 
