@@ -18,6 +18,7 @@ const UniqueCategory = React.useMemo(
   [allProducts]
 );
 
+
 const UniqueBrand = React.useMemo(
   () => ["All", ...new Set(allProducts.map(p => p.brand?.toLowerCase()))],
   [allProducts]
